@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mahjabin Chowdhury</title>
+  <link rel="stylesheet" href="style.css?v=210">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="cv_mahjabin_chowdhury.pdf" download class="nav-cv">↓ CV</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1 class="hero-name">
+          Mahjabin<br>
+          <span>CHOWDHURY</span>
+        </h1>
+        <p class="hero-role">Étudiante en 3ème année de <span>BUT Cybersécurité</span></p>
+        <p class="hero-skills">Réseaux · Cybersécurité </p>
+        <p class="hero-desc">
+          Étudiante en BUT Réseaux &amp; Télécommunications parcours Cybersécurité,
+          spécialisée dans l'administration et la sécurisation de réseaux et de serveurs Linux,
+          avec une expérience en développement Python et agents IA.
+          À la recherche d'un stage de 4 à 6 mois, disponible à partir du 8 février 2027.
+        </p>
+      </div>
+      <div class="hero-avatar">
+        <img src="personnage.png" alt="Personnage pixel de Mahjabin">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION À PROPOS -->
+  <div id="apropos" class="section-wrap">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">À propos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="apropos-text">
+      <div>
+        <p>Depuis toute petite, les ordinateurs me fascinent. Je voulais comprendre ce qui se passe derrière l'écran : comment un message traverse la planète, comment un site s'affiche, comment on protège tout ça. Cette curiosité ne m'a jamais quittée, et aujourd'hui je suis en <strong>3ème année de BUT Réseaux & Télécommunications, parcours Cybersécurité</strong>, à l'IUT de Villetaneuse (Université Sorbonne Paris Nord).</p>
+        <p>Tout a commencé avec un <strong>Bac STI2D spécialité SIN</strong> : Python, Arduino, électronique, premières bases en administration système. Le BUT m'a ensuite permis d'aller beaucoup plus loin : VLAN, routage, ACL, pare-feu, virtualisation, développement web. À travers les SAE, j'ai monté des réseaux sécurisés multi-sites, développé une application web de quiz et analysé des données avec Python. Ce que j'aime, c'est que chaque projet se termine par quelque chose qui fonctionne.</p>
+        <p>Pendant mon stage de BUT2 chez <strong>IA Company</strong>, j'ai découvert le monde de la startup : j'y ai conçu le cerveau d'un agent IA (prompt engineering, pipeline RAG), développé une application mobile et sécurisé des serveurs Linux en production. Ça m'a confirmé que je veux travailler sur des projets concrets, là où réseaux, sécurité et développement se rejoignent.</p>
+        <p>En dehors des cours, je continue à apprendre : je suis l'actualité cybersécurité, je fais des challenges sur TryHackMe et RootMe Pro, et je participe à des événements avec l'association Capital Filles (ChangeNOW, VivaTech, journées d'immersion chez L'Oréal, Orange et Rexel).</p>
+        <p>Je recherche aujourd'hui un <strong>stage de fin de BUT de 4 à 6 mois en réseaux, systèmes et cybersécurité, disponible à partir du 8 février 2027</strong>. N'hésite pas à me contacter !</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPÉRIENCES -->
+  <div id="experiences" class="section-wrap-alt">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Expériences</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">06/26 – 08/26 (Stage BUT2)</div>
+	  <div class="exp-head">
+            <img src="logo-iacompany.png" alt="Logo IA Company" class="exp-logo">
+            <div>
+              <div class="timeline-title">Stage – Développement & sécurisation (agent IA)</div>
+              <div class="timeline-org">IA Company (startup française), Bobigny (93000)</div>
+            </div>
+          </div>
+          <ul class="timeline-list">
+            <li>Développement du cerveau d’un agent IA : prompt engineering, base de connaissances et pipeline RAG</li>
+            <li>Développement d’une interface de chat et d’un dashboard web connecté aux données d’une montre WearOS</li>
+            <li>Développement d’une application mobile avec React Native et Expo : interfaces, navigation et fonctionnalités de l’agent IA</li>
+            <li>Administration et sécurisation de serveurs Linux en production : accès, permissions, pare-feu, Fail2Ban, Nginx et sauvegardes</li>
+            <li>Migration et structuration des données de SQLite/JSON vers PostgreSQL</li>
+            <li>Mise en place d’environnements Dev / Pré-prod / Prod</li>
+            <li>Développement Python, appels d’API, traitement de données et Git</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">05/22 – 07/22 (30 Jours)</div>
+	  <div class="exp-head">
+            <img src="logo-montchapet.png" alt="Logo Lycée Montchapet" class="exp-logo">
+            <div>
+              <div class="timeline-title">Assistante de l’informaticien (PFMP)</div>
+              <div class="timeline-org">Lycée Montchapet, Dijon (21000)</div>
+            </div>
+          </div>
+          <ul class="timeline-list">
+            <li>Assistance dans la maintenance et le dépannage des ordinateurs et du réseau</li>
+            <li>Installation et configuration de logiciels et périphériques</li>
+            <li>Support aux enseignants et aux élèves pour les problèmes informatiques</li>
+            <li>Organisation du matériel et suivi des stocks</li>
+            <li>Travail en équipe et respect des consignes de sécurité informatique</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 – 2026</div>
+	  <div class="exp-head">
+            <img src="logo-capitalfilles.png" alt="Logo Capital Filles" class="exp-logo">
+            <div>
+              <div class="timeline-title">Association Capital Filles</div>
+            </div>
+          </div>
+          <ul class="timeline-list">
+            <li>ChangeNOW 2025 (26/04/25)</li>
+            <li>Journée de découverte de métiers scientifiques chez Rexel (12/02/2025)</li>
+            <li>Orange OpenTech 2024 (27/11/24)</li>
+            <li>Salon Vivatech (25/05/2024)</li>
+            <li>Journée de découverte de métier avec la Responsable Produit chez Orange (19/04/2024)</li>
+            <li>Journée d’immersion chez L’Oréal + Équipe Cybersécurité de L’Oréal (18/04/2024)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION COMPÉTENCES (intégrée) -->
+  <div id="competences" class="section-wrap">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Compétences</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <h3>Réseaux</h3>
+        <div class="skill-list">
+          <span>Administration réseaux</span><span>IPv4 / IPv6</span><span>Sous-réseaux</span><span>VLAN</span><span>Routage statique</span><span>DHCP</span><span>DNS</span><span>FTP</span><span>SSH</span><span>NTP</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Cybersécurité</h3>
+        <div class="skill-list">
+          <span>Sécurité des systèmes et réseaux</span><span>VLAN sécurisés</span><span>DMZ</span><span>ACL</span><span>Pare-feu</span><span>iptables</span><span>Sensibilisation aux menaces</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Pentesting</h3>
+        <div class="skill-list">
+          <span>TryHackMe</span><span>RootMe Pro</span><span>Identification de vulnérabilités</span><span>Contre-mesures</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3>Sécurisation de serveurs</h3>
+        <div class="skill-list">
+          <span>Serveurs Linux en production</span><span>Gestion des accès et permissions</span><span>Fail2Ban</span><span>Nginx</span><span>Reverse proxy</span><span>Sauvegardes</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Systèmes d'exploitation</h3>
+        <div class="skill-list">
+          <span>Linux (Debian)</span><span>Windows</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Virtualisation &amp; DevOps</h3>
+        <div class="skill-list">
+          <span>Docker</span><span>Docker Compose</span><span>VirtualBox</span><span>Marionnet</span><span>Environnements Dev / Pré-prod / Prod</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3>Téléphonie IP</h3>
+        <div class="skill-list">
+          <span>Asterisk</span><span>FreePBX</span><span>SIP</span><span>Softphone</span><span>Déploiement et maintenance LAN</span><span>Câblage RJ45</span><span>Postes VoIP</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Programmation</h3>
+        <div class="skill-list">
+          <span>Python</span><span>Bash scripting</span><span>PowerShell</span><span>JavaScript</span><span>PHP</span><span>C++ (Arduino)</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Développement web &amp; mobile</h3>
+        <div class="skill-list">
+          <span>HTML</span><span>CSS</span><span>Flask</span><span>API REST</span><span>React Native</span><span>Expo</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3>Intelligence artificielle</h3>
+        <div class="skill-list">
+          <span>Agents IA</span><span>RAG</span><span>ChromaDB</span><span>TF-IDF</span><span>Prompt engineering</span><span>LLM</span><span>STT / TTS</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Bases de données</h3>
+        <div class="skill-list">
+          <span>SQL</span><span>PostgreSQL</span><span>SQLite</span><span>Migration de données</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Systèmes électroniques</h3>
+        <div class="skill-list">
+          <span>Conception de circuits électroniques</span><span>Programmation embarquée (Arduino)</span><span>Microprocesseur 4 bits</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3>Outils</h3>
+        <div class="skill-list">
+          <span>Visual Studio Code</span><span>Git</span><span>GitHub</span><span>GitLab</span><span>Trello</span><span>Pack Office</span><span>Google Workspace</span><span>Office 365</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Soft skills</h3>
+        <div class="skill-list">
+          <span>Communication</span><span>Esprit d'équipe</span><span>Sens de l'organisation</span><span>Rigueur</span><span>Curiosité et volonté d'apprendre</span><span>Créativité</span><span>Adaptabilité</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langues -->
+    <h3 style="font-size: 1.4rem; margin: 3rem 0 1rem; color: var(--accent);">Langues</h3>
+    <div style="max-width: 500px;">
+      <div class="lang-item"><span class="lang-name">Français</span><div class="lang-bar-bg"><div class="lang-bar" style="width:100%"></div></div><span class="lang-level">C2</span></div>
+      <div class="lang-item"><span class="lang-name">Anglais</span><div class="lang-bar-bg"><div class="lang-bar" style="width:83%"></div></div><span class="lang-level">C1</span></div>
+      <div class="lang-item"><span class="lang-name">Bangla</span><div class="lang-bar-bg"><div class="lang-bar" style="width:100%"></div></div><span class="lang-level">NAT</span></div>
+    </div>
+  </div>
+  
+  <!-- SECTION PROJETS -->
+  <div id="projets" class="section-wrap-alt">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Projets</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Projets personnels -->
+      <h3 class="projects-subtitle">Projets personnels</h3>
+      <div class="projects-grid">
+        <div class="card project-card project-empty">
+          <span class="project-tag tag-dev">À venir</span>
+          <p>Mes projets personnels seront ajoutés ici.</p>
+        </div>
+        <!-- Modèle pour ajouter un projet personnel :
+        <div class="card project-card">
+          <span class="project-tag tag-dev">Développement web</span>
+          <h3 class="skill-title">Titre du projet</h3>
+          <p class="timeline-org">Solo · Sujet</p>
+          <p>Description du projet.</p>
+        </div>
+        -->
+      </div>
+
+      <!-- Projets universitaires -->
+      <h3 class="projects-subtitle">Projets universitaires</h3>
+      <div class="projects-grid">
+
+        <div class="card project-card">
+          <span class="project-tag tag-cyber">Cybersécurité</span>
+          <span class="project-date">Avril 2026</span>
+          <img src="logo-rootmepro.png" alt="Logo Root Me Pro" class="card-logo">
+          <h3 class="skill-title">SAE 4.01 – Sécurité &amp; pentest</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">En solo · BUT2 R&amp;T · Cybersécurité offensive et défensive</p>
+            <p class="detail-text">Dans le cadre de la SAE 4.01 « Sécuriser un système d’information », j’ai réalisé individuellement plusieurs challenges sur la plateforme Root-Me, qui reproduisent des situations réelles d’attaque. Le but était d’adopter une double posture : celle de l’attaquant (Red Team), qui cherche à compromettre un système, et celle du défenseur (Blue Team), qui l’analyse et le sécurise. Pour chaque faille, j’ai évalué l’impact sur la confidentialité, l’intégrité et la disponibilité, puis proposé des contre-mesures adaptées.</p>
+
+            <p class="detail-sub">Les challenges réalisés</p>
+            <ul class="detail-list">
+              <li><strong>Reconnaissance (SOC réseau) :</strong> analyse de logs ELK et Suricata pour retrouver l’IP du scanner, la cible, les ports ouverts (SSH, SMB, LDAP, Kerberos, RDP…) et le type de scan utilisé (scan SYN). La liste des services exposés laissait penser à un contrôleur de domaine.</li>
+              <li><strong>Authentification SSH :</strong> connexion avec un mot de passe faible, découverte d’une sauvegarde de clé privée lisible, puis élévation de privilèges grâce à un script autorisé en <code>sudo</code> : injection de ma propre clé publique pour accéder au compte d’un autre utilisateur.</li>
+              <li><strong>Service réseau (FTP) :</strong> analyse d’une capture <code>.pcap</code> qui montre que le protocole FTP transmet identifiants et données en clair, donc récupérables sans effort.</li>
+              <li><strong>Injection de commande (SOC web) :</strong> analyse des logs d’un serveur web pour repérer l’IP malveillante, isoler la requête qui injecte une commande <code>wget</code> afin de télécharger un probable web shell, et décoder un message caché en Base64 dans le User-Agent.</li>
+            </ul>
+
+            <p class="detail-sub">Outils et environnement</p>
+            <p class="detail-text">Nmap, Hydra, Burp Suite, Netcat/Telnet, ELK et Suricata pour l’analyse de logs. Travail sous Penguin Linux (Linux sur Chromebook) à la place de Kali.</p>
+
+            <p class="detail-sub">Contre-mesures proposées</p>
+            <p class="detail-text">Pare-feu et segmentation réseau, IDS/IPS, désactivation des services inutiles, mots de passe forts et authentification SSH par clé uniquement, permissions strictes sur les clés (600), Fail2Ban, principe du moindre privilège sur <code>sudo</code>, remplacement de FTP par SFTP/FTPS, validation des entrées utilisateur côté serveur, WAF et surveillance des logs.</p>
+
+
+            <div class="project-links">
+              <span class="project-links-title">Rapports</span>
+              <a href="https://drive.google.com/file/d/1khr_AVCQs-DZBsTfPk7z8YPoWnysljLB/view?usp=drive_link" target="_blank" rel="noopener">↗ Partie 1 : reconnaissance, SSH, FTP (TP_VSI_Chowdhury-Mahjabin_Groupe1.pdf)</a>
+              <a href="https://drive.google.com/file/d/1f2xvnGp_Fadu8uZnfUqM3MQ42WpiInTU/view?usp=drive_link" target="_blank" rel="noopener">↗ Partie 2 : injection de commande (TP-Partie2_VSI_Chowdhury-Mahjabin_Groupe1.pdf)</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card project-card">
+          <span class="project-tag tag-cyber">Cybersécurité</span>
+	  <span class="project-date">Mars 2026</span>
+          <img src="logo-pentest.png?v=2" alt="Logo VirtualBox" class="card-logo">
+          <h3 class="skill-title">SAE 3.04 – Découvrir le pentesting</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">En solo · BUT2 R&amp;T · Cybersécurité offensive</p>
+            <p class="detail-text">Cette SAE m'a permis de découvrir le pentesting en reproduisant les différentes phases d'un test d'intrusion, dans un cadre pédagogique et éthique. J'ai monté un laboratoire virtuel isolé, identifié les vulnérabilités de deux machines cibles, exploité certaines d'entre elles de façon contrôlée, puis formulé des recommandations de sécurité.</p>
+
+            <p class="detail-sub">Environnement de test</p>
+            <ul class="detail-list">
+              <li><strong>Machine attaquante :</strong> Kali Linux 2020.3 (32 bits).</li>
+              <li><strong>Machines cibles :</strong> Windows XP Édition Familiale SP3 et Metasploitable 2, deux systèmes volontairement vulnérables.</li>
+              <li><strong>Réseau :</strong> réseau interne VirtualBox (intnet), qui isole totalement le laboratoire d'Internet et du système hôte, avec un adressage IPv4 commun (192.168.10.0/24).</li>
+            </ul>
+
+            <p class="detail-sub">Démarche suivie</p>
+            <ul class="detail-list">
+              <li><strong>Reconnaissance :</strong> vérification de la connectivité avec <code>ping</code> et requêtes ARP. Windows XP ne répondait pas au ping car son pare-feu bloque l'ICMP, mais l'ARP a confirmé sa présence sur le réseau.</li>
+              <li><strong>Scan de vulnérabilités :</strong> installation et configuration de Nessus sur Kali, puis scans de Windows XP et de Metasploitable 2. Le premier scan de XP donnait peu de résultats à cause du pare-feu : j'ai adapté les paramètres (désactivation du ping ICMP) et désactivé temporairement le pare-feu pour obtenir une analyse complète. Nmap a servi à identifier les services et à confirmer les failles.</li>
+              <li><strong>Exploitation :</strong> sur Windows XP, exploitation de la faille critique MS08-067 (service Server, exécution de code à distance sans authentification) avec Metasploit, jusqu'à l'ouverture d'une session Meterpreter. Sur Metasploitable 2, exploitation du service UnrealIRCd (CVE-2010-2075) pour obtenir un accès avec privilèges élevés.</li>
+              <li><strong>Post-exploitation :</strong> navigation dans le système de fichiers, création et suppression de fichiers, gestion des processus de la machine compromise.</li>
+            </ul>
+
+            <p class="detail-sub">Outils</p>
+            <p class="detail-text">VirtualBox, Kali Linux, Nessus, Nmap, Metasploit Framework (Meterpreter).</p>
+
+            <p class="detail-sub">Recommandations de sécurité</p>
+            <p class="detail-text">Mise à jour des systèmes et remplacement des systèmes obsolètes, désactivation des services inutiles, mise en place de pare-feu et de filtrage réseau, déploiement de solutions IDS/IPS et sensibilisation des utilisateurs aux bonnes pratiques.</p>
+
+            <div class="project-links">
+              <span class="project-links-title">Rapport</span>
+              <a href="https://drive.google.com/file/d/1LX0-yQKnuUW_UX8sbxK_FFZLpACr_H0N/view?usp=drive_link" target="_blank" rel="noopener">↗ SAE3_04_Pentesting.pdf</a>
+            </div>
+          </div>
+          </div>
+
+        <div class="card project-card">
+          <span class="project-tag tag-reseau">Réseaux</span>
+	  <span class="project-date">Février 2026</span>
+          <img src="logo-pentest.png?v=2" alt="Logo VirtualBox" class="card-logo">
+          <h3 class="skill-title">SAE 3.03 – Réseau sécurisé multi-sites</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">Équipe · Infrastructure sécurisée</p>
+            <p class="detail-text">Cette SAE consiste à concevoir un réseau informatique sécurisé reliant plusieurs sites d'une organisation. Le but est de répondre aux besoins de l'entreprise (sites distants, utilisateurs, services réseau) tout en garantissant la sécurité des données qui circulent entre les sites.</p>
+
+            <p class="detail-sub">Démarche de conception</p>
+            <ul class="detail-list">
+              <li><strong>Analyse des besoins :</strong> prise en compte des sites distants, des utilisateurs et des services réseau nécessaires.</li>
+              <li><strong>Stratégie de sécurité :</strong> pare-feu, chiffrement et politique de mots de passe robustes.</li>
+              <li><strong>Choix du matériel et des logiciels :</strong> équipements compatibles et administrables de façon centralisée.</li>
+              <li><strong>Supervision centralisée :</strong> surveillance et gestion du réseau à distance.</li>
+              <li><strong>Configuration de la sécurité sur chaque site :</strong> pare-feu et mesures de protection.</li>
+              <li><strong>Tests :</strong> vérification que le réseau est fonctionnel et sécurisé.</li>
+              <li><strong>Sauvegarde et restauration :</strong> procédures pour protéger les données en cas de panne ou d'incident.</li>
+              <li><strong>Sensibilisation :</strong> information des utilisateurs sur leurs responsabilités en matière de sécurité.</li>
+            </ul>
+
+            <p class="detail-sub">Notions de sécurité abordées</p>
+            <p class="detail-text">Critères D.I.C.P (Disponibilité, Intégrité, Confidentialité, Preuve), différence entre sûreté et sécurité, notions de menace, de vulnérabilité et de risque, et mécanismes de protection : cryptographie, pare-feu, contrôle d'accès, antivirus, audit et sensibilisation. Le cas Stuxnet (2010) illustre comment une clé USB infectée peut compromettre un réseau industriel.</p>
+          </div>
+        </div>
+
+
+        <div class="card project-card">
+          <span class="project-tag tag-dev">Développement web</span>
+          <span class="project-date">Février 2026</span>
+          <img src="logo-quiz.png" alt="Logo Quiz Challenge" class="card-logo">
+          <h3 class="skill-title">SAE 3.02 – Quiz Challenge (web)</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">Équipe de 4 · BUT2 R&amp;T · Application web client-serveur</p>
+	    <p class="detail-text">Dans le cadre de la SAE 3.02 « Développer des applications communicantes », notre équipe de quatre étudiants a conçu Quiz Challenge, une application web de quiz. Le joueur se connecte, choisit un mode de jeu, un thème et un niveau de difficulté, répond à des questions, puis retrouve son score dans un classement et des statistiques. Le projet a été réalisé et testé en local : l'application n'a pas été déployée en ligne.</p>
+            
+	    <p class="detail-sub">Architecture</p>
+            <ul class="detail-list">
+              <li><strong>Front-end :</strong> HTML, CSS et JavaScript. L'interface gère la connexion du joueur, le choix du thème et du sous-thème, la configuration de la partie, le déroulement du quiz et l'affichage des scores.</li>
+              <li><strong>Back-end :</strong> scripts PHP qui reçoivent les requêtes du front, interrogent la base de données et renvoient les résultats au format JSON.</li>
+              <li><strong>Base de données MySQL :</strong> 7 tables (joueurs, thèmes, sous-thèmes, niveaux, questions, réponses proposées, scores), avec 9 thèmes et 42 sous-thèmes.</li>
+            </ul>
+
+            <p class="detail-sub">Travail en équipe et réseau</p>
+            <p class="detail-text">Comme l'application n'était pas hébergée sur un serveur en ligne, chaque membre de l'équipe travaillait sur sa partie depuis chez lui, sur son ordinateur personnel. Pour développer et tester ensemble à distance, nous avons utilisé Hamachi, un logiciel de réseau privé virtuel (VPN) : les ordinateurs de l'équipe se retrouvent dans un même réseau, comme s'ils étaient sur le même réseau local. Mon front-end, lancé sur mon ordinateur, pouvait ainsi appeler le back-end et la base de données qui tournaient sur l'ordinateur d'une camarade, ce qui a permis de tester l'application complète sans passer par un hébergeur. Le code était partagé avec Git et GitHub.</p>
+
+            <p class="detail-sub">Ma partie : le front-end</p>
+            <p class="detail-text">Je me suis occupée du front-end : pages de l'application, navigation, gestion de la session du joueur, communication avec le back-end par requêtes JavaScript, et affichage des questions, des scores et des classements.</p>
+
+            <p class="detail-sub">Outils</p>
+            <p class="detail-text">HTML, CSS, JavaScript, PHP, MySQL, Hamachi, Git, GitHub, Visual Studio Code.</p>
+
+            <div class="project-links">
+              <span class="project-links-title">Documents</span>
+              <a href="https://drive.google.com/file/d/1q1Aw32OiXQNhu0tvTkKjDcVAx5RXBr84/view?usp=drive_link" target="_blank" rel="noopener">↗ Documentation technique – Application Quiz SAÉ 302</a>
+              <a href="https://drive.google.com/file/d/1d2ZgJzh1XVmT6fgtC97uKAq0lS0dPpTz/view?usp=drive_link" target="_blank" rel="noopener">↗ Captures d'écran de l'application</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <span class="project-tag tag-telecom">Télécommunications</span>
+          <span class="project-date">Janvier 2026</span>
+          <img src="logo-sae3.01.png" alt="Logo SAE 3.01" class="card-logo">
+          <h3 class="skill-title">SAE 3.01 – Système de transmission</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">Équipe de 11 · BUT2 R&amp;T · Télécommunications · Adjointe cheffe de projet</p>
+            <p class="detail-text">Dans le cadre de la SAE 3.01 « Mettre en œuvre un système de transmission », notre groupe a conçu, réalisé et validé un système de transmission optique en anneau, sur fibre monomode OS2, avec une distance d'au moins 10 km. Le cahier des charges demandait un débit supérieur à 1 Gbit/s, au moins deux longueurs d'onde multiplexées sur la même fibre (WDM) et une fonction d'insertion et d'extraction optique (OADM) sans interruption du trafic.</p>
+
+            <p class="detail-sub">Organisation du projet</p>
+            <p class="detail-text">L'équipe était répartie en trois groupes : conception, fabrication et caractérisation. J'étais adjointe de la cheffe de projet, avec qui je répartissais le travail entre les binômes selon les avancées et les difficultés. Le suivi se faisait avec Trello et un diagramme de Gantt sur l'ensemble des séances.</p>
+
+            <p class="detail-sub">Conception</p>
+            <ul class="detail-list">
+              <li><strong>Recherche bibliographique :</strong> modulation OOK, multiplexage WDM/CWDM, fonction OADM et réseaux de Bragg (FBG).</li>
+              <li><strong>Choix techniques :</strong> architecture en anneau en CWDM, avec quatre longueurs d'onde (1470, 1510, 1530 et 1550 nm), une par pôle : Sud, Est, Ouest et Nord.</li>
+              <li><strong>Schémas fonctionnels :</strong> circulation des longueurs d'onde dans l'anneau et position des modules OADM.</li>
+            </ul>
+
+            <p class="detail-sub">Fabrication</p>
+            <ul class="detail-list">
+              <li>Inventaire du matériel : convertisseurs de média Gigabit, modules SFP CWDM, modules CWDM OADM, jarretières et adaptateurs.</li>
+              <li>Préparation et nettoyage de la fibre, puis montage des coupleurs WDM et des modules OADM.</li>
+              <li>Câblage de l'anneau entre les quatre pôles et mise en service des longueurs d'onde.</li>
+            </ul>
+
+            <p class="detail-sub">Caractérisation</p>
+            <ul class="detail-list">
+              <li><strong>Diagramme de l'œil :</strong> observation du signal à l'oscilloscope avec un photodétecteur rapide.</li>
+              <li><strong>OSNR :</strong> mesure avec un analyseur de spectre optique Anritsu. Valeur relevée d'environ 38 dB, pour une exigence supérieure à 20 dB.</li>
+              <li><strong>Fibre :</strong> mesures de réflectométrie (OTDR).</li>
+              <li><strong>BER :</strong> estimation à partir de l'OSNR et de l'ouverture de l'œil.</li>
+            </ul>
+
+            <p class="detail-sub">Ma contribution</p>
+            <p class="detail-text">Avec la cheffe de projet, j'ai analysé le cahier des charges et les spécifications techniques, rédigé la partie caractérisation et les résultats, et réalisé la mise en forme de la présentation. Le projet s'est terminé par une soutenance de 20 minutes suivie de 10 minutes de questions.</p>
+
+            <p class="detail-sub">Outils</p>
+            <p class="detail-text">Fibre OS2, modules SFP CWDM, OADM, convertisseurs de média, oscilloscope Tektronix, analyseur de spectre optique Anritsu, OTDR, Trello.</p>
+
+            <div class="project-links">
+              <span class="project-links-title">Document</span>
+              <a href="https://drive.google.com/file/d/1o-6rxglj1cTtK8btJrId3pWrwjqzfESQ/view?usp=drive_link" target="_blank" rel="noopener">↗ Présentation SAE 3.01 Système de transmission</a>
+            </div>
+          </div>
+        </div>
+
+	<div class="card project-card">
+	  <span class="project-tag tag-reseau">Réseaux &amp; Systèmes</span>
+          <span class="project-date">Juin 2025</span>
+	  <img src="logo-sae2.04.png" alt="Logo SAE 2.04" class="card-logo">
+	  <h3 class="skill-title">SAE 2.04 – Exploitation et administration d'un réseau</h3>
+	  <button type="button" class="project-more">Voir plus +</button>
+	  <div class="project-details">
+	    <p class="detail-meta">Équipe de 3 · BUT1 R&amp;T · Administration systèmes et réseaux</p>
+	    <p class="detail-text">Dans le cadre de la SAE 2.04, nous devions concevoir, configurer et sécuriser l'infrastructure réseau d'une entreprise fictive. L'objectif était de mettre en place une architecture fonctionnelle (routage, commutation, services) tout en répondant à un cahier des charges précis et en documentant l'ensemble des manipulations pour un client.</p>
+
+	    <p class="detail-sub">Architecture et Commutation</p>
+	    <ul class="detail-list">
+	      <li>Configuration de commutateurs (VLANs, trunks, spanning-tree) pour segmenter le réseau.</li>
+	      <li>Mise en place du routage inter-VLAN et configuration des passerelles.</li>
+	      <li>Adressage IP et déploiement du protocole DHCP pour l'attribution automatique des adresses.</li>
+	    </ul>
+
+	    <p class="detail-sub">Services et Sécurité</p>
+	    <ul class="detail-list">
+	      <li>Installation et configuration de services réseau (DNS, serveur web, partage de fichiers).</li>
+	      <li>Mise en place de règles de pare-feu (Firewall) pour filtrer les flux entre les différents VLANs et l'extérieur.</li>
+	      <li>Tests de connectivité et validation des flux autorisés/bloqués via des outils comme ping, traceroute et captures de paquets.</li>
+	    </ul>
+
+	    <p class="detail-sub">Documentation</p>
+	    <p class="detail-text">Un rapport complet a été rédigé, comprenant le schéma d'architecture réseau, les tableaux d'adressage IP, les configurations des équipements (switchs, routeurs, serveurs) et les résultats des tests de communication. Des captures d'écran des interfaces d'administration et des tests viennent appuyer les explications techniques.</p>
+
+	    <p class="detail-sub">Outils</p>
+	    <p class="detail-text">Simulateur réseau (Cisco Packet Tracer ou GNS3), machines virtuelles Linux/Windows Server, équipements physiques (switchs, routeurs), Wireshark.</p>
+	  </div>
+	</div>
+
+	<div class="card project-card">
+	  <span class="project-tag tag-dev">Développement Web &amp; Réseau</span>
+          <span class="project-date">Juin 2025</span>
+	  <img src="logo-sae2.03.png" alt="Logo SAE 2.03" class="card-logo">
+	  <h3 class="skill-title">SAE 2.03 – Plateforme intelligente de gestion réseau</h3>
+	  <button type="button" class="project-more">Voir plus +</button>
+	  <div class="project-details">
+	    <p class="detail-meta">Équipe de 2 · BUT1 R&amp;T · Conception et développement d'applications</p>
+	    <p class="detail-text">Dans le cadre de cette SAE, nous avons développé une solution logicielle complète pour automatiser la gestion des infrastructures réseau d'une entreprise. L'objectif était de centraliser les données clients et les ressources réseau (adresses IP, VLAN, VRF) dans une base de données, et d'offrir une interface web pour gérer le tout de manière intuitive et sécurisée.</p>
+
+	    <p class="detail-sub">Fonctionnalités Clés</p>
+	    <ul class="detail-list">
+	      <li>Gestion complète des clients (ajout, modification, suppression) via une interface web ergonomique.</li>
+	      <li>Attribution automatique de la première adresse IP libre dans le sous-réseau dédié au client.</li>
+	      <li>Assignation automatique des VLANs spécifiques à chaque site et création des VRF personnalisées.</li>
+	      <li>Recherche dynamique et filtrage des clients par nom, site ou statut d'adresse IP.</li>
+	    </ul>
+
+	    <p class="detail-sub">Architecture Technique</p>
+	    <ul class="detail-list">
+	      <li><strong>Base de données :</strong> MySQL relationnelle pour assurer l'intégrité des données.</li>
+	      <li><strong>Backend :</strong> Application web sécurisée développée en PHP.</li>
+	      <li><strong>Frontend :</strong> Interface web responsive conçue en HTML et CSS.</li>
+	      <li><strong>Automatisation :</strong> Scripts générant automatiquement les fichiers de configuration Cisco conformes (IP, VLAN, VRF).</li>
+	    </ul>
+
+	    <p class="detail-sub">Résultats et Livrables</p>
+	    <p class="detail-text">La plateforme permet de générer des configurations Cisco clé en main, directement déployables sur les équipements. Elle réduit considérablement les erreurs humaines et le temps de déploiement. Le projet a été livré avec une base de données opérationnelle, l'application web complète et une documentation technique exhaustive incluant un guide utilisateur et un glossaire.</p>
+
+	    <div class="project-links">
+	      <span class="project-links-title">Liens du projet</span>
+	      <a href="https://drive.google.com/file/d/1-qXpf87RamfiKwGaCM3JH-vK7U87-L0b/view?usp=drive_link" target="_blank" rel="noopener">↗ Fiche technique SAE 2.03 (Rapport PDF)</a>
+	      <a href="https://drive.google.com/file/d/1glZeIR-_gN5s_AGmQohB8gtXOhKlh9-5/view?usp=drive_link" target="_blank" rel="noopener">↗ Vidéo de présentation de la solution</a>
+	    </div>
+  </div>
+</div>
+
+        <div class="card project-card">
+          <span class="project-tag tag-reseau">Réseaux</span>
+          <span class="project-date">Avril 2025</span>
+          <img src="logo-sae21.png" alt="Logo SAE 2.01" class="card-logo">
+          <h3 class="skill-title">SAE 2.01 – Réseau multi-sites</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">Équipe de 5 · BUT1 R&amp;T · Infrastructure réseau</p>
+            <p class="detail-text">Dans le cadre de la SAE 2.01 « Construire un réseau informatique pour une petite structure », nous devions concevoir et mettre en place le réseau d'une PME fictive, GreenHome Solutions, spécialisée dans la domotique écoresponsable. L'entreprise possède deux sites distants : un siège à Lyon (20 postes) et un atelier de production à Grenoble (10 postes). Les deux sites devaient être interconnectés via Internet, avec des échanges sécurisés et des services réseau de base.</p>
+
+            <p class="detail-sub">Travail réalisé</p>
+            <ul class="detail-list">
+              <li><strong>Architecture et adressage :</strong> schémas du réseau, plan d'adressage IP et découpage en sous-réseaux pour les deux sites.</li>
+              <li><strong>VLAN et routage :</strong> un VLAN par service (direction et comptabilité, production, commercial), routage inter-VLAN et routage entre les sites.</li>
+              <li><strong>Services réseau :</strong> serveurs DNS et HTTP, avec un serveur web accessible depuis l'extérieur.</li>
+              <li><strong>Sécurité :</strong> listes de contrôle d'accès (ACL) pour filtrer les flux, traduction d'adresses NAT/PAT pour l'accès à Internet, et administration à distance sécurisée par SSH.</li>
+              <li><strong>Tests :</strong> validation progressive des configurations et interception du trafic avec Wireshark pour identifier le chemin des paquets.</li>
+            </ul>
+
+            <p class="detail-sub">Organisation de l'équipe</p>
+            <p class="detail-text">Chaque membre avait un rôle précis : chef de projet, architecte réseau, administrateur systèmes, technicien sécurité et testeur. Le sujet demandait un journal de bord individuel et une fiche de contribution collective pour suivre la part de chacun. Le projet se terminait par une présentation orale avec démonstration sur simulateur.</p>
+
+            <p class="detail-sub">Compétences travaillées</p>
+            <p class="detail-text">Adressage IP, VLAN, routage inter-VLAN, NAT/PAT, ACL, DNS, HTTP, SSH, analyse de trafic avec Wireshark, documentation technique et travail en équipe.</p>
+          </div>
+        </div>
+
+	<div class="card project-card">
+	  <span class="project-tag tag-data">Traitement de données</span>
+          <span class="project-date">Février 2025</span>
+	  <img src="logo-sae1.05.png" alt="Logo SAE 1.05" class="card-logo">
+	  <h3 class="skill-title">SAE 1.05 – Traitement de données énergétiques</h3>
+	  <button type="button" class="project-more">Voir plus +</button>
+	  <div class="project-details">
+	    <p class="detail-meta">Équipe de 2 · BUT1 R&amp;T · Programmation Python &amp; Analyse de données</p>
+    
+	    <p class="detail-text">L'objectif de ce projet était de développer un programme Python capable de traiter automatiquement un large jeu de données ouvertes (CSV) et de générer un site web présentant les résultats de manière claire et visuelle. Nous avons travaillé sur les données horaires de production d'énergie éolienne et solaire en France depuis 2020, issues de data.gouv.fr (Commission de Régulation de l'Énergie).</p>
+
+	    <p class="detail-sub">Lecture et Organisation des Données</p>
+	    <ul class="detail-list">
+	      <li>Utilisation des modules Python <code>csv</code> et <code>datetime</code> pour parser le fichier et extraire les informations temporelles (mois, année, heure).</li>
+	      <li>Création de structures de données complexes avec <code>defaultdict</code> pour organiser les données mensuelles, journalières par année et horaires.</li>
+	      <li>Gestion des erreurs et exceptions pour garantir la robustesse du script face aux données manquantes ou mal formatées.</li>
+	    </ul>
+
+	    <p class="detail-sub">Analyse Temporelle et Statistiques</p>
+	    <ul class="detail-list">
+	      <li><strong>Analyse mensuelle :</strong> Calcul des moyennes pour lisser les variations et mettre en évidence les tendances saisonnières de production.</li>
+	      <li><strong>Analyse journalière :</strong> Suivi de l'évolution de la production au fil des jours pour comparer les différentes années.</li>
+	      <li><strong>Analyse horaire :</strong> Étude des cycles de production sur 24 heures pour comprendre les pics et la complémentarité entre l'éolien et le solaire.</li>
+	    </ul>
+
+	    <p class="detail-sub">Visualisation et Génération Web</p>
+	    <p class="detail-text">Nous avons utilisé la bibliothèque <code>matplotlib</code> pour générer des graphiques (courbes, histogrammes) représentant les moyennes calculées. Le programme Python génère ensuite automatiquement une page web HTML structurée (via une variable <code>html_content</code> intégrant le code HTML/CSS) qui présente les graphiques, des tableaux récapitulatifs et des explications claires sur la méthodologie.</p>
+
+	    <p class="detail-sub">Outils</p>
+	    <p class="detail-text">Python (csv, datetime, defaultdict, matplotlib), HTML, CSS. Source des données : data.gouv.fr.</p>
+	  </div>
+	</div>
+
+        <div class="card project-card">
+          <span class="project-tag tag-elec">Systèmes électroniques</span>
+          <span class="project-date">Janvier 2025</span>
+          <img src="logo-sae1.03.png" alt="Logo SAE 1.03" class="card-logo">
+          <h3 class="skill-title">SAE 1.03 – Microprocesseur 4 bits</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">Équipe de 2 · BUT1 R&amp;T · Architecture des systèmes numériques</p>
+            <p class="detail-text">Dans le cadre de la SAE 1.03 (IoT), nous devions réaliser un microprocesseur 4 bits sur une carte ESP32, programmée avec Arduino IDE, puis rédiger une documentation technique comme pour un produit destiné à un client. Le travail s'est fait en deux parties : un microprocesseur piloté par des signaux de contrôle, puis un microprocesseur piloté par des instructions en mots binaires.</p>
+
+            <p class="detail-sub">Structure du microprocesseur</p>
+            <p class="detail-text">Il est composé d'un banc de registres, d'une unité arithmétique et logique (ALU 4 bits), d'un registre accumulateur et d'un multiplexeur 2 vers 1. Il exécute quatre instructions : addition, soustraction, copie de l'accumulateur dans un registre, et chargement d'une valeur dans l'accumulateur.</p>
+
+            <p class="detail-sub">Partie 1 : signaux de contrôle</p>
+            <ul class="detail-list">
+              <li>Programmation des composants en C++ : additionneur et soustracteur, multiplexeurs, décodeur, bascules D, registres, banc de registres et accumulateur.</li>
+              <li>Pilotage du microprocesseur par des signaux de contrôle : écriture de l'accumulateur, opération de l'ALU, adresse et écriture du banc de registres, sélection du multiplexeur.</li>
+              <li>Exécution d'un calcul en plusieurs instructions (7 + 3 − 6), avec affichage du résultat sur des LEDs.</li>
+            </ul>
+
+            <p class="detail-sub">Partie 2 : instructions binaires</p>
+            <ul class="detail-list">
+              <li>Ajout d'un bus d'instructions de 6 bits, avec un code opératoire et un paramètre pour chaque instruction.</li>
+              <li>Génération des signaux de contrôle à partir du bus d'instructions, uniquement avec des opérations logiques de base (NOT, AND, OR, XOR), sans structure conditionnelle.</li>
+              <li>Exécution d'un calcul plus long (10 + 3 − 4 + 5 − 2), avec des bibliothèques de serveur web asynchrone pour saisir les instructions.</li>
+            </ul>
+
+            <p class="detail-sub">Documentation</p>
+            <p class="detail-text">Pour chaque partie, un rapport PDF présente la structure et le fonctionnement du microprocesseur, la procédure d'exécution des instructions, des captures des entrées, du contenu du banc de registres et de l'accumulateur, des photos des LEDs et l'interprétation des résultats, avec les codes essentiels en annexe.</p>
+
+            <p class="detail-sub">Outils</p>
+            <p class="detail-text">Carte ESP32, Arduino IDE, C++, LEDs, bibliothèques AsyncTCP et ESPAsyncWebServer.</p>
+
+            <div class="project-links">
+              <span class="project-links-title">Rapports</span>
+              <a href="https://drive.google.com/file/d/1Qm-Pyujwfte7rrTdKDTeRagz269FPO84/view?usp=drive_link" target="_blank" rel="noopener">↗ Partie 1 : signaux de contrôle (SAE1.03 Partie 1.pdf)</a>
+              <a href="https://drive.google.com/file/d/10qmPwokp9IkmNNk2V5kfnBkd8njluS-K/view?usp=drive_link" target="_blank" rel="noopener">↗ Partie 2 : instructions binaires (SAE1.03 Partie 2.pdf)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <span class="project-tag tag-reseau">Réseaux</span>
+          <span class="project-date">Janvier 2025</span>
+          <img src="logo-sae1.02.png" alt="Logo SAE 1.02" class="card-logo">
+          <h3 class="skill-title">SAE 1.02 – Routage avec Marionnet</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">En solo · BUT1 R&amp;T · Réseaux</p>
+            <p class="detail-text">Dans le cadre de la SAE 1.02, nous devions construire avec Marionnet, un simulateur de réseaux sous Linux, un réseau composé de deux sous-réseaux reliés par un routeur et connectés au monde réel par une passerelle. L'objectif était de configurer les interfaces et les tables de routage pour que toutes les machines communiquent entre elles et avec l'extérieur, puis de sécuriser le réseau avec un pare-feu.</p>
+
+            <p class="detail-sub">Architecture</p>
+            <ul class="detail-list">
+              <li><strong>Deux réseaux :</strong> 10.1.0.0/24 (serveur nfs, machine anna et le routeur R) et 10.2.0.0/24 (routeur R, passerelle G1, machines pirate et max).</li>
+              <li><strong>Un routeur et une passerelle :</strong> R relie les deux réseaux, et G1 connecte le réseau virtuel au reste d'Internet.</li>
+            </ul>
+
+            <p class="detail-sub">Travail réalisé</p>
+            <ul class="detail-list">
+              <li><strong>Création du réseau :</strong> ajout des machines Debian, des switchs et des câbles, avec les bonnes interfaces sur le routeur.</li>
+              <li><strong>Adressage et routage :</strong> attribution des adresses IP avec la commande <code>ip</code>, ajout des routes sur chaque machine et de la route par défaut sur le routeur, puis tests avec <code>ping</code>.</li>
+              <li><strong>Accès à l'extérieur :</strong> test d'accès à la machine physique depuis le réseau virtuel et téléchargement d'un fichier avec <code>wget</code>, avec analyse du problème rencontré.</li>
+              <li><strong>Sécurisation du routeur :</strong> règles <code>iptables</code> sur les chaînes INPUT et OUTPUT avec une politique par défaut restrictive, en n'autorisant que l'ICMP.</li>
+              <li><strong>Protection du réseau 10.1.0.0/24 :</strong> règles sur la chaîne FORWARD pour isoler le serveur nfs de l'extérieur, bloquer la machine pirate et journaliser ses tentatives d'accès dans <code>/var/log/messages</code>.</li>
+            </ul>
+
+            <p class="detail-sub">Suite du TP</p>
+            <p class="detail-text">Le sujet prévoyait aussi l'interdiction des connexions SSH venant de l'extérieur, la mise en place d'un service de résolution de noms, et un service de configuration réseau sur le routeur, avec attribution des adresses selon l'adresse MAC puis de façon dynamique avec des baux de 30 jours.</p>
+
+            <p class="detail-sub">Évaluation</p>
+            <p class="detail-text">La SAE était évaluée par un contrôle écrit d'une heure, en lien direct avec le TP.</p>
+
+            <p class="detail-sub">Outils</p>
+            <p class="detail-text">Marionnet, Debian, <code>ip</code>, <code>ping</code>, SSH, <code>wget</code>, <code>iptables</code>.</p>
+          </div>
+        </div>
+        <div class="card project-card">
+          <span class="project-tag tag-cyber">Cybersécurité</span>
+          <span class="project-date">Décembre 2024</span>
+          <img src="logo-sae11.png" alt="Logo SAE 1.01" class="card-logo">
+          <h3 class="skill-title">SAE 1.01 – Hygiène informatique</h3>
+          <button type="button" class="project-more">Voir plus +</button>
+          <div class="project-details">
+            <p class="detail-meta">Équipe de 2 · BUT1 R&amp;T · Vidéo de sensibilisation</p>
+            <p class="detail-text">Dans le cadre de la SAE 1.01 « Hygiène informatique », nous devions réaliser en binôme une courte vidéo de sensibilisation à la cybersécurité. Le contexte : l'administrateur système est l'un des premiers interlocuteurs des nouveaux collaborateurs d'une entreprise. Il doit leur faire adopter les bons réflexes pour qu'ils deviennent des utilisateurs conscients et responsables de leur environnement numérique.</p>
+
+            <p class="detail-sub">Le travail demandé</p>
+            <ul class="detail-list">
+              <li><strong>Un message, une problématique :</strong> la vidéo devait traiter un seul sujet de cybersécurité, au choix : une pratique à éviter, un bon réflexe à encourager, ou la conduite à tenir en cas d'attaque.</li>
+              <li><strong>Format libre :</strong> vidéo, animation ou diaporama temporisé, d'une durée comprise entre 90 secondes et 3 minutes.</li>
+              <li><strong>Sources :</strong> le sujet demandait de s'appuyer sur les cours et sur des ressources officielles, comme les fiches de bonnes pratiques de l'ANSSI et de Cybermalveillance.gouv.fr.</li>
+            </ul>
+
+            <p class="detail-sub">Compétences travaillées</p>
+            <p class="detail-text">Sensibilisation des utilisateurs aux risques cyber, vulgarisation d'une notion technique, recherche et sélection de sources fiables, conception d'un message clair et pertinent, travail en binôme et respect d'une échéance de dépôt.</p>
+
+            <p class="detail-sub">Évaluation</p>
+            <p class="detail-text">Les vidéos étaient notées par un jury d'enseignants du département R&amp;T selon la pertinence, la clarté et l'originalité du message, ainsi que la qualité de la communication. Les meilleures productions participaient à un concours au niveau de l'IUT.</p>
+
+            <div class="project-links">
+              <span class="project-links-title">Vidéo</span>
+              <a href="https://drive.google.com/file/d/1kPJcQWnpnEpvc8sgWzi1aOJoEgIhvXYX/view?usp=drive_link" target="_blank" rel="noopener">↗ Vidéo de sensibilisation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- SECTION FORMATION -->
+  <div id="formation" class="section-wrap">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Formation</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 – 2027</div>
+        <div class="timeline-title">BUT Réseaux & Télécommunications</div>
+        <div class="timeline-org">Université Sorbonne Paris Nord, IUT de Villetaneuse (93430)</div>
+        <ul class="timeline-list">
+          <li>Spécialité Cybersécurité (en cours)</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 – 2024</div>
+        <div class="timeline-title">BAC Technologique STI2D (Sciences et technologies de l'industrie et du développement durable)</div>
+        <div class="timeline-org">Lycée Paul Eluard, Seine-Saint-Denis (93200)</div>
+        <ul class="timeline-list">
+          <li>Spécialité SIN (Systèmes d'Information et Numérique)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION HOBBIES -->
+  <div id="hobbies" class="section-wrap-alt">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Hobbies & centres d'intérêt</h2>
+        <div class="section-line"></div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
+        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div><h3 class="skill-title">Dessin & Peinture</h3><p>Art traditionnel et numérique, illustration</p></div>
+        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🎵</div><h3 class="skill-title">Musique</h3><p>Écoute active, découverte d'artistes, concerts</p></div>
+        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🎮</div><h3 class="skill-title">Jeux vidéo</h3><p>Stratégie, coordination, réflexes</p></div>
+        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">✈️</div><h3 class="skill-title">Voyages</h3><p>Découvertes culturelles (Inde, Malaisie, Italie, Thaïlande, Népal)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION CONTACT -->
+  <div id="contact" class="section-wrap">
+    <div class="section-header">
+      <span class="section-number">07</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 500px;">
+      <a href="https://www.linkedin.com/in/mahjabin-chowdhury/" target="_blank" class="contact-link">
+        <span class="contact-link-icon">🔗</span> LinkedIn
+      </a>
+      <a href="mailto:mahjabinsamad1234@gmail.com" class="contact-link">
+        <span class="contact-link-icon">✉️</span> mahjabinsamad1234@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2025 Mahjabin Chowdhury</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/mahjabin-chowdhury/" target="_blank">LinkedIn</a>
+      <a href="mailto:mahjabinsamad1234@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('open');
+    }
+    document.addEventListener('click', (e) => {
+      const navLinks = document.getElementById('navLinks');
+      const hamburger = document.getElementById('hamburger');
+      if (navLinks.classList.contains('open') && !hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+      }
+    });
+    const cursor = document.getElementById('cursor');
+    const cursorRing = document.getElementById('cursorRing');
+    if (cursor && cursorRing) {
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        cursorRing.style.left = e.clientX + 'px';
+        cursorRing.style.top = e.clientY + 'px';
+      });
+      const interactive = document.querySelectorAll('a, button, .card, .btn-primary, .btn-secondary');
+      interactive.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursorRing.style.width = '52px';
+          cursorRing.style.height = '52px';
+          cursorRing.style.borderColor = 'rgba(0,229,160,0.8)';
+        });
+        el.addEventListener('mouseleave', () => {
+          cursorRing.style.width = '36px';
+          cursorRing.style.height = '36px';
+          cursorRing.style.borderColor = 'rgba(0,229,160,0.4)';
+        });
+      });
+    }
+    const reveals = document.querySelectorAll('.reveal');
+    function reveal() {
+      for (let el of reveals) {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (revealTop < windowHeight - revealPoint) {
+          el.classList.add('visible');
+        }
+      }
+    }
+    document.querySelectorAll('.stat-card, .timeline-item, .card, .soft-skill, .lang-item').forEach(el => el.classList.add('reveal'));
+    window.addEventListener('load', reveal);
+    window.addEventListener('scroll', reveal);
+  </script>
+
+  <script>
+    (function () {
+      const overlay = document.createElement('div');
+      overlay.className = 'pm-overlay';
+      overlay.innerHTML = '<div class="pm-box" role="dialog" aria-modal="true"><button type="button" class="pm-close" aria-label="Fermer">×</button><div class="pm-content"></div></div>';
+      document.body.appendChild(overlay);
+      const content = overlay.querySelector('.pm-content');
+
+      function openModal(card) {
+        const tag = card.querySelector('.project-tag');
+        const logo = card.querySelector('.card-logo');
+        const title = card.querySelector('.skill-title');
+        const details = card.querySelector('.project-details');
+        content.innerHTML = '';
+        if (tag) content.appendChild(tag.cloneNode(true));
+        const dateEl = card.querySelector('.project-date');
+        if (dateEl) content.appendChild(dateEl.cloneNode(true));
+        if (logo) {
+          const img = logo.cloneNode(true);
+          img.className = 'pm-logo';
+          content.appendChild(img);
+        }
+        const h = document.createElement('h3');
+        h.className = 'pm-title';
+        h.textContent = title ? title.textContent : '';
+        content.appendChild(h);
+        if (details) {
+          const d = document.createElement('div');
+          d.innerHTML = details.innerHTML;
+          content.appendChild(d);
+        }
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.project-card:not(.project-empty)').forEach(function (card) {
+        card.addEventListener('click', function () { openModal(card); });
+      });
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay || e.target.closest('.pm-close')) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
+</body>
+</html>
