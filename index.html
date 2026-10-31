@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Mahjabin Chowdhury</title>
-  <link rel="stylesheet" href="style.css?v=210">
+  <link rel="stylesheet" href="style.css?v=215">
 </head>
 <body>
 
@@ -20,10 +20,9 @@
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#formation">Formation</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="cv_mahjabin_chowdhury.pdf" download class="nav-cv">↓ CV</a>
+    <a href="https://drive.google.com/file/d/1Zhi7drX8o8LCdmHDSqMm-UDdrl-2M-1w/view?usp=drive_link" target="_blank" class="nav-cv">↓ CV</a>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </div>
@@ -73,7 +72,7 @@
   </div>
 
   <!-- EXPÉRIENCES -->
-  <div id="experiences" class="section-wrap-alt">
+  <div id="experiences" class="section-wrap">
     <div class="section-wrap">
       <div class="section-header">
         <span class="section-number">02</span>
@@ -250,7 +249,7 @@
   </div>
   
   <!-- SECTION PROJETS -->
-  <div id="projets" class="section-wrap-alt">
+  <div id="projets" class="section-wrap">
     <div class="section-wrap">
       <div class="section-header">
         <span class="section-number">04</span>
@@ -711,8 +710,13 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-date">2024 – 2027</div>
+        <div class="exp-head">
+          <img src="logo-sorbonne.png" alt="Logo Sorbonne" class="exp-logo">
+          <div>
         <div class="timeline-title">BUT Réseaux & Télécommunications</div>
         <div class="timeline-org">Université Sorbonne Paris Nord, IUT de Villetaneuse (93430)</div>
+          </div>
+        </div>
         <ul class="timeline-list">
           <li>Spécialité Cybersécurité (en cours)</li>
         </ul>
@@ -720,8 +724,13 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-date">2021 – 2024</div>
+        <div class="exp-head">
+          <img src="logo-pauleluard.png" alt="Logo Paul Eluard" class="exp-logo">
+          <div>
         <div class="timeline-title">BAC Technologique STI2D (Sciences et technologies de l'industrie et du développement durable)</div>
         <div class="timeline-org">Lycée Paul Eluard, Seine-Saint-Denis (93200)</div>
+          </div>
+        </div>
         <ul class="timeline-list">
           <li>Spécialité SIN (Systèmes d'Information et Numérique)</li>
         </ul>
@@ -729,41 +738,46 @@
     </div>
   </div>
 
-  <!-- SECTION HOBBIES -->
-  <div id="hobbies" class="section-wrap-alt">
-    <div class="section-wrap">
-      <div class="section-header">
-        <span class="section-number">06</span>
-        <h2 class="section-title">Hobbies & centres d'intérêt</h2>
-        <div class="section-line"></div>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
-        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div><h3 class="skill-title">Dessin & Peinture</h3><p>Art traditionnel et numérique, illustration</p></div>
-        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🎵</div><h3 class="skill-title">Musique</h3><p>Écoute active, découverte d'artistes, concerts</p></div>
-        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🎮</div><h3 class="skill-title">Jeux vidéo</h3><p>Stratégie, coordination, réflexes</p></div>
-        <div class="card"><div style="font-size: 2rem; margin-bottom: 0.5rem;">✈️</div><h3 class="skill-title">Voyages</h3><p>Découvertes culturelles (Inde, Malaisie, Italie, Thaïlande, Népal)</p></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION CONTACT -->
+    <!-- SECTION CONTACT -->
   <div id="contact" class="section-wrap">
     <div class="section-header">
       <span class="section-number">07</span>
       <h2 class="section-title">Contact</h2>
       <div class="section-line"></div>
     </div>
-    <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 500px;">
-      <a href="https://www.linkedin.com/in/mahjabin-chowdhury/" target="_blank" class="contact-link">
-        <span class="contact-link-icon">🔗</span> LinkedIn
-      </a>
-      <a href="mailto:mahjabinsamad1234@gmail.com" class="contact-link">
-        <span class="contact-link-icon">✉️</span> mahjabinsamad1234@gmail.com
-      </a>
+    
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <span class="terminal-dot dot-red"></span>
+        <span class="terminal-dot dot-yellow"></span>
+        <span class="terminal-dot dot-green"></span>
+        <span class="terminal-title">mahjabin@portfolio: ~</span>
+      </div>
+      
+      <div class="terminal-body">
+        <p class="term-line"><span class="term-prompt">mahjabin@portfolio:~$</span> contact --help</p>
+        
+        <div class="term-output">
+          <p><span class="term-key">Nom</span>    : Mahjabin Chowdhury</p>
+          <p><span class="term-key">Statut</span> : Disponible pour un stage (Fév 2027)</p>
+          <p><span class="term-key">Email</span>  : mahjabinsamad1234@gmail.com</p>
+          <p><span class="term-key">Réseau</span> : linkedin.com/in/mahjabin-chowdhury</p>
+        </div>
+
+        <p class="term-line"><span class="term-prompt">mahjabin@portfolio:~$</span> ./contact_me.sh</p>
+        
+        <div class="term-buttons">
+          <a href="https://www.linkedin.com/in/mahjabin-chowdhury/" target="_blank" class="term-btn">
+            <span>🔗</span> Ouvrir LinkedIn
+          </a>
+          <a href="mailto:mahjabinsamad1234@gmail.com" class="term-btn">
+            <span>✉️</span> Envoyer un email
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <span>© 2025 Mahjabin Chowdhury</span>
     <div class="footer-links">
